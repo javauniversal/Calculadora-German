@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnCalcular = findViewById(R.id.btnCalcular);
         btnCalcular.setOnClickListener(this);
 
+        Button btnLimpiar = findViewById(R.id.btnLimpiar);
+        btnLimpiar.setOnClickListener(this);
+
         editNumeroUno = findViewById(R.id.editNumeroUno);
         editNumeroDos = findViewById(R.id.editNumeroDos);
         txtResultado = findViewById(R.id.txtResultado);
@@ -31,13 +34,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.btnCalcular) {
-            if (editNumeroUno.getText().toString().trim().isEmpty() || editNumeroDos.getText().toString().trim().isEmpty()) {
-                Toast.makeText(this, "Campos requeridos", Toast.LENGTH_LONG).show();
-            } else {
-                int resultado = Integer.parseInt(editNumeroUno.getText().toString().trim()) + Integer.parseInt(editNumeroDos.getText().toString().trim());
-                txtResultado.setText(String.format("Resultado: %s", resultado));
-            }
+        switch (v.getId()) {
+            case R.id.btnCalcular:
+                if (editNumeroUno.getText().toString().trim().isEmpty() || editNumeroDos.getText().toString().trim().isEmpty()) {
+                    Toast.makeText(this, "Campos requeridos", Toast.LENGTH_LONG).show();
+                } else {
+                    int resultado = Integer.parseInt(editNumeroUno.getText().toString().trim()) + Integer.parseInt(editNumeroDos.getText().toString().trim());
+                    txtResultado.setText(String.format("Resultado: %s", resultado));
+                }
+                break;
+            case R.id.btnLimpiar:
+                editNumeroUno.setText("");
+                editNumeroDos.setText("");
+                txtResultado.setText("");
+                editNumeroUno.requestFocus();
+                break;
         }
     }
 }
