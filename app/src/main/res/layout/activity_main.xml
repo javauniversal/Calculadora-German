@@ -47,14 +47,14 @@
 
         <Button
             android:layout_marginTop="25dp"
-            android:id="@+id/button"
+            android:id="@+id/btnCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/calcular" />
 
         <TextView
             android:layout_marginTop="40dp"
-            android:id="@+id/textView3"
+            android:id="@+id/txtResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="23sp"
