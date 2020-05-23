@@ -2,7 +2,7 @@
     <string name="app_name">Calculadora</string>
     <string name="calculadora">Calculadora</string>
     <string name="calcular">Calcular</string>
-    <string name="numero_dos">Numero dos</string>
-    <string name="numero_uno">Numero uno</string>
+    <string name="numero_dos">Número dos</string>
+    <string name="numero_uno">Número uno</string>
     <string name="limpiar">Limpiar</string>
 </resources>
