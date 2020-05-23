@@ -45,19 +45,31 @@
             android:inputType="number"
             tools:ignore="Autofill" />
 
-        <Button
-            android:layout_marginTop="25dp"
-            android:id="@+id/btnCalcular"
+        <LinearLayout
+            android:layout_marginTop="35dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/calcular" />
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:id="@+id/btnLimpiar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/limpiar" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calcular"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/limpiar"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_marginTop="40dp"
