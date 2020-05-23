@@ -3,7 +3,20 @@
     <string name="app_name">Calculator</string>
     <string name="calculadora">Calculator</string>
     <string name="calcular">Calculate</string>
-    <string name="numero_dos">Number one</string>
-    <string name="numero_uno">Number two</string>
+    <string name="numero_dos">Number two</string>
+    <string name="numero_uno">Number one</string>
     <string name="limpiar">Clean</string>
+    <string name="requerido">required field</string>
+    <string name="resultadoforma">Result:</string>
+    <string name="select_operador">Select an operatorr</string>
+    <string name="error_divicion">Cannot divide by 0</string>
+
+    <string-array name="operadores">
+        <item>Select an operator</item>
+        <item>Add</item>
+        <item>Subtract</item>
+        <item>Multiply</item>
+        <item>Division</item>
+    </string-array>
+
 </resources>

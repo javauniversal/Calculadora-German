@@ -5,4 +5,17 @@
     <string name="numero_dos">Número dos</string>
     <string name="numero_uno">Número uno</string>
     <string name="limpiar">Limpiar</string>
+    <string name="requerido">Campo requerido</string>
+    <string name="resultadoforma">Resultado:</string>
+    <string name="select_operador">Seleccione un operador</string>
+    <string name="error_divicion">No se puede dividir entre 0</string>
+
+    <string-array name="operadores">
+        <item>Seleccione un operador</item>
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+        <item>División</item>
+    </string-array>
+
 </resources>

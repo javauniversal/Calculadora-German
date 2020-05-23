@@ -45,6 +45,13 @@
             android:inputType="number"
             tools:ignore="Autofill" />
 
+        <Spinner
+            android:layout_marginTop="25dp"
+            android:id="@+id/spOperaciones"
+            android:background="@drawable/spinner_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_marginTop="35dp"
             android:layout_width="match_parent"
